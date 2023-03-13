@@ -1,0 +1,326 @@
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+.about-header {
+ 
+    background-image: url("../../image/about/banner.png");
+    width:100%;
+    height:40vh;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+    padding:14px;
+
+}
+#page-header h2, #page-header p{
+    color:white;
+
+}
+
+#about-head img{
+    width:50%;
+    height:auto; 
+}
+#about-head{
+    display:flex;
+    align-item:center;
+}
+#about-head div{
+    padding-left:40px;
+}
+#about-app{
+    text-align:center;
+}
+#about-app .video{
+    width:70%;
+    height:100%;
+    margin:30px auto 0 auto;
+}
+#about-app .video video{
+  
+    width:100%;
+    height:100%;
+    border-radius:20px;
+
+}
+
+/* 
+
+ .splitscreen {
+    display: flex;
+    flexDirection: row
+}
+
+.left-screen {
+    width: 30%;
+    padding-left:0;
+}
+.left-screen #limg{
+    height:300px;
+    width:200px;
+    margin:0;
+    padding:0;
+}
+
+
+.right-screen {
+    width: 70%;
+} */
+
+
+#features .fe-box{
+    width:180px;
+    text-align:center;
+    padding:25px 15px;
+    box-shadow:20px 20px 34px rgba(0, 0, 0, 0.03) ;
+    border:1px solid #cce7d0; 
+    border-radius:4px;
+    margin :15px 0;
+     
+} 
+#features .fe-box:hover{
+    box-shadow:10px 10px 54px rgba(0,0,0,0.03);
+}
+#features .fe-box h6{
+    display:inline-block;
+    padding:9px 8px 6px 8px;
+    line-height:1;
+    border-radius:4px;
+    color: #088178;
+    background-color:#fddde4
+
+
+}
+#features{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+}
+#features .fe-box img{
+  width:100%;
+  margin-bottom:10px;
+
+}
+
+#page-header{
+    /* background-image:url("./images/about/banner.png"); */
+    /* background-image:url("../../../images/about/banner.png"); */
+    
+    width:100%;
+    height:40vh;
+    background-size:cover;
+    display : flex;
+    justify-content:center;
+    flex-direction:column;
+    padding:14px;
+    
+
+}
+#page-header h2,
+#page-header p{
+    color:#fff;
+    text-align:center;
+}
+
+
+
+
+#newslatter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color:#041e42 ;
+
+}
+#newslatter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFF;
+
+    
+    
+   
+}
+#newslatter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+    
+   
+}
+#newslatter p  span{
+    color: #ffbd27;
+}
+#newslatter .form{
+    display: flex;
+     
+
+    
+}
+#newslatter input{
+    height:3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border:1px solid transparent ;
+     border-radius: 4px;
+     outline: none;
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
+}
+#newslatter button{
+    background: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* //media Query */
+
+@media (max-width:799px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #navbar{
+        display: flex ;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #form-details{
+        padding:40px;
+    }
+    #form-details form {
+       width:50%; 
+    }
+}
+
+
+
+
+@media (max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+     /* .....navbar....... */
+     #header{
+        padding: 10px 30px;
+    }
+    #page-header p{    
+        margin: 16px 15px 20px 84px;}
+    /* .....navbar end....... */
+    h1{
+        width: 100%;
+        margin-left: 17px;
+
+    }
+    h2{
+        font-size: 32px;
+    }
+    p{
+        width: 55%;
+    }
+    .marquee{
+        width: 55%;
+    }
+    
+    #about-head{
+        flex-direction:column;
+    }
+    #about-app {
+        text-align: left;
+        min-width: 48%;
+        width:100%;
+        padding: 0;
+        margin: 0;
+    }
+    #about-head img{
+        width:55%;
+        margin-bottom:20px;
+       
+    }
+    #about-head div{
+        padding-left:0px;
+    }
+    /* .video{
+        margin-left:0px;
+        width:55%;
+    } */
+    #about-head .video video{
+      
+        width: 71%;
+        /* margin-left: -69px; */
+        height: 100%;
+        border-radius: 20px;
+
+    }
+    #features .fe-box {
+        width: 55%;
+    }
+    .marquee{
+        min-width: 48%;
+    }
+        
+    footer .copyright{
+        text-align: start;
+    }
+    #features .fe-box img {
+        width: 35%;
+        margin-bottom: 9px;
+    }
+
+
+
+#contact-details .details h2, #form-details form h2 {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 16px 0;
+}
+}
